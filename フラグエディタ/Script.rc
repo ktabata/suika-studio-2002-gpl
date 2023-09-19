@@ -1,0 +1,184 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 日本語 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+#ifdef _WIN32
+LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+#pragma code_page(932)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// 24
+//
+
+CREATEPROCESS_MANIFEST_RESOURCE_ID 24      MOVEABLE PURE   "flageditor.exe.manifest"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_FLAGEDIT DIALOG DISCARDABLE  0, 0, 247, 235
+STYLE DS_LOCALEDIT | DS_MODALFRAME | DS_CENTER | WS_MINIMIZEBOX | WS_VISIBLE | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "フラグエディタ"
+FONT 9, "ＭＳ Ｐゴシック"
+BEGIN
+    DEFPUSHBUTTON   "追加",IDC_BTNADD,4,5,50,14
+    PUSHBUTTON      "削除",IDC_BTNDEL,192,5,50,14
+    PUSHBUTTON      "ON/OFF",IDC_BTNONOFF,97,5,50,14
+    PUSHBUTTON      "閉じる",IDC_BTNCLOSE,192,217,50,14
+    PUSHBUTTON      "保存",IDC_BTNSAVE,130,217,50,14
+    LISTBOX         IDC_FLAGLIST,4,25,238,184,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | LBS_DISABLENOSCROLL | WS_VSCROLL | 
+                    WS_HSCROLL | WS_TABSTOP
+    PUSHBUTTON      "ファイルを開く",IDC_BTNOPEN,4,217,50,14
+END
+
+IDD_FLAGEDITADD DIALOG DISCARDABLE  0, 0, 119, 59
+STYLE DS_LOCALEDIT | DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "フラグの追加"
+FONT 9, "ＭＳ Ｐゴシック"
+BEGIN
+    DEFPUSHBUTTON   "追加",IDOK,7,38,50,14
+    PUSHBUTTON      "ｷｬﾝｾﾙ",IDCANCEL,62,38,50,14
+    LTEXT           "フラグ名",IDC_STATIC,7,7,57,8
+    EDITTEXT        IDC_EDITFLAGNAME,7,17,105,12,ES_AUTOHSCROLL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    "IDD_FLAGEDIT", DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        RIGHTMARGIN, 242
+        TOPMARGIN, 5
+        BOTTOMMARGIN, 231
+    END
+
+    "IDD_FLAGEDITADD", DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 112
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 52
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x3L
+#else
+ FILEFLAGS 0x2L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041104b0"
+        BEGIN
+            VALUE "Comments", "readme_suika.htmlをお読みください。\0"
+            VALUE "CompanyName", "プロジェクト山田（仮）\0"
+            VALUE "FileDescription", "Suika フラグファイルエディタ\0"
+            VALUE "FileVersion", "Version 1.00.0  2002年1月12日\0"
+            VALUE "InternalName", "\0"
+            VALUE "LegalCopyright", "Copyright (C) 2001, 2002, Studio K24J / Project Yamada.\0"
+            VALUE "OriginalFilename", "フラグエディタ.exe\0"
+            VALUE "ProductName", "アドベンチャーゲーム開発＆実行環境「Suika」\0"
+            VALUE "ProductVersion", "1.0\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x411, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON                ICON    DISCARDABLE     "map.ico"
+#endif    // 日本語 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

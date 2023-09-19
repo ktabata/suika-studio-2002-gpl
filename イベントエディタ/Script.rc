@@ -1,0 +1,548 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 日本語 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+#ifdef _WIN32
+LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+#pragma code_page(932)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// 24
+//
+
+CREATEPROCESS_MANIFEST_RESOURCE_ID 24      MOVEABLE PURE   "eventeditor.exe.manifest"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_NARRATION DIALOG DISCARDABLE  0, 0, 111, 74
+STYLE DS_LOCALEDIT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "ナレーション"
+FONT 28, "ＭＳ Ｐゴシック"
+BEGIN
+    EDITTEXT        IDC_EDIT,1,1,109,64,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    WS_VSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,1,66,50,7
+    PUSHBUTTON      "ｷｬﾝｾﾙ",IDCANCEL,60,66,50,7
+END
+
+IDD_SERIF DIALOG DISCARDABLE  0, 0, 111, 76
+STYLE DS_LOCALEDIT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "セリフ"
+FONT 28, "ＭＳ Ｐゴシック"
+BEGIN
+    EDITTEXT        IDC_EDITNAME,17,1,93,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDITSERIF,17,15,93,51,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    WS_VSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,1,68,50,7
+    PUSHBUTTON      "ｷｬﾝｾﾙ",IDCANCEL,60,68,50,7
+    LTEXT           "話者",IDC_STATIC,1,2,15,9
+    LTEXT           "台詞",IDC_STATIC,1,15,15,9
+END
+
+IDD_CHARACTER DIALOG DISCARDABLE  0, 0, 187, 191
+STYLE DS_LOCALEDIT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "キャラクタ"
+FONT 9, "ＭＳ Ｐゴシック"
+BEGIN
+    EDITTEXT        IDC_EDITCOLOR,10,17,120,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "参照",IDC_BTNCOLOR,136,18,39,13,WS_DISABLED
+    EDITTEXT        IDC_EDITMASK,10,65,120,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "参照",IDC_BTNMASK,136,66,39,13,WS_DISABLED
+    COMBOBOX        IDC_CBHALIGN,10,111,75,51,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_CBVALIGN,104,112,73,56,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    DEFPUSHBUTTON   "OK",IDOK,76,170,50,14
+    PUSHBUTTON      "ｷｬﾝｾﾙ",IDCANCEL,132,170,50,14
+    GROUPBOX        "カラーイメージ",IDC_STATIC,4,4,178,37
+    GROUPBOX        "マスクイメージ",IDC_STATIC,4,52,178,37
+    LTEXT           "ファイル名を指定しない場合、表示中のキャラクタが画面からフェードアウトされます。",
+                    IDC_STATIC,4,146,178,17
+    GROUPBOX        "水平整列",IDC_STATIC,4,101,86,30
+    GROUPBOX        "垂直整列",IDC_STATIC,98,101,84,30
+END
+
+IDD_BACKGROUND DIALOG DISCARDABLE  0, 0, 186, 73
+STYLE DS_LOCALEDIT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "背景"
+FONT 9, "ＭＳ Ｐゴシック"
+BEGIN
+    EDITTEXT        IDC_EDIT,4,15,120,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "参照",IDC_BTNREF,129,15,46,13,WS_DISABLED
+    DEFPUSHBUTTON   "OK",IDOK,74,55,50,14
+    PUSHBUTTON      "ｷｬﾝｾﾙ",IDCANCEL,131,55,50,14
+    LTEXT           "背景画像:",-1,4,4,90,8
+END
+
+IDD_SELECT DIALOGEX 0, 0, 275, 151
+STYLE DS_LOCALEDIT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "選択肢"
+FONT 9, "ＭＳ Ｐゴシック", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDITMSG1,42,23,141,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDITLABEL1,197,23,66,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDITMSG2,42,50,141,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDITLABEL2,197,50,66,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDITMSG3,42,78,141,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDITLABEL3,197,78,66,13,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,162,130,50,14
+    PUSHBUTTON      "ｷｬﾝｾﾙ",IDCANCEL,218,130,50,14
+    GROUPBOX        "選択肢のメッセージ",IDC_STATIC,38,7,149,92
+    GROUPBOX        "ジャンプ先のラベル",IDC_STATIC,193,7,75,92
+    LTEXT           "選択肢１:",IDC_STATIC,7,23,26,9
+    LTEXT           "選択肢２:",IDC_STATIC,7,50,26,9
+    LTEXT           "選択肢３:",IDC_STATIC,7,78,27,8
+    LTEXT           "※「選択肢３」はオプションです。入力しなければ、選択は二者択一になります。",
+                    IDC_STATIC,7,112,261,10,0,WS_EX_RIGHT
+END
+
+IDD_LABEL DIALOG DISCARDABLE  0, 0, 119, 63
+STYLE DS_LOCALEDIT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "ラベル"
+FONT 9, "ＭＳ Ｐゴシック"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,7,42,50,14
+    PUSHBUTTON      "ｷｬﾝｾﾙ",IDCANCEL,62,42,50,14
+    LTEXT           "ラベル名:",IDC_STATIC,7,7,37,10
+    EDITTEXT        IDC_EDIT,7,17,105,12,ES_AUTOHSCROLL
+END
+
+IDD_FLAG DIALOG DISCARDABLE  0, 0, 139, 69
+STYLE DS_LOCALEDIT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "フラグ"
+FONT 9, "ＭＳ Ｐゴシック"
+BEGIN
+    EDITTEXT        IDC_EDIT,7,20,73,13,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO,87,20,46,77,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    DEFPUSHBUTTON   "OK",IDOK,26,48,50,14
+    PUSHBUTTON      "ｷｬﾝｾﾙ",IDCANCEL,82,48,50,14
+    LTEXT           "フラグ名:",IDC_STATIC,7,7,27,8
+    LTEXT           "値:",IDC_STATIC,87,7,21,8
+END
+
+IDD_CDDA DIALOGEX 0, 0, 167, 107
+STYLE DS_LOCALEDIT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "CD-DA 演奏"
+FONT 9, "ＭＳ Ｐゴシック", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDITTRACK,7,22,22,13,ES_NUMBER,WS_EX_RIGHT
+    EDITTEXT        IDC_EDITMILLISEC,7,61,22,12,ES_NUMBER,WS_EX_RIGHT
+    DEFPUSHBUTTON   "OK",IDOK,55,86,50,14
+    PUSHBUTTON      "ｷｬﾝｾﾙ",IDCANCEL,110,86,50,14
+    LTEXT           "0を指定すると、演奏を停止します。",IDC_STATIC,34,24,102,
+                    9
+    LTEXT           "演奏するトラックの番号:",IDC_STATIC,7,10,70,9
+    LTEXT           "フェード効果の持続ミリ秒:",IDC_STATIC,7,49,79,9
+    LTEXT           "0を指定すると、フェード効果を使いません。",IDC_STATIC,
+                    35,63,125,11
+END
+
+IDD_JUMP DIALOG DISCARDABLE  0, 0, 151, 263
+STYLE DS_LOCALEDIT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "ジャンプ"
+FONT 9, "ＭＳ Ｐゴシック"
+BEGIN
+    EDITTEXT        IDC_EDITEVENT,13,35,81,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDITLABEL,13,93,81,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO,13,172,81,77,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    EDITTEXT        IDC_EDITFLAG,13,209,81,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,38,242,50,14
+    PUSHBUTTON      "ｷｬﾝｾﾙ",IDCANCEL,94,242,50,14
+    GROUPBOX        "ジャンプ先",IDC_STATIC,7,7,138,130
+    LTEXT           "イベントファイル名:",IDC_STATIC,13,23,56,9
+    PUSHBUTTON      "参照",IDC_BUTTON,99,34,36,14,WS_DISABLED
+    LTEXT           "ラベル名:",IDC_STATIC,13,81,53,8
+    LTEXT           "指定しなければ、イベントファイルの先頭にジャンプします。",
+                    IDC_STATIC,13,112,125,17
+    GROUPBOX        "ジャンプする条件",IDC_STATIC,7,143,138,93
+    LTEXT           "フラグ名:",IDC_STATIC,13,197,28,8
+    LTEXT           "条件:",IDC_STATIC,13,160,32,8
+    LTEXT           "指定しなければ、同一ファイル内でジャンプします。",
+                    IDC_STATIC,13,51,125,19
+END
+
+IDD_COMMENT DIALOG DISCARDABLE  0, 0, 199, 141
+STYLE DS_LOCALEDIT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "コメント"
+FONT 9, "ＭＳ Ｐゴシック"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,90,124,50,14
+    PUSHBUTTON      "ｷｬﾝｾﾙ",IDCANCEL,146,124,50,14
+    EDITTEXT        IDC_EDIT,2,4,194,116,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_AUTOHSCROLL | WS_VSCROLL | WS_HSCROLL
+END
+
+IDD_MIDI DIALOGEX 0, 0, 146, 137
+STYLE DS_LOCALEDIT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "MIDI 演奏"
+FONT 9, "ＭＳ Ｐゴシック", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDITFILE,7,21,89,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDITMILLISEC,6,79,22,12,ES_NUMBER,WS_EX_RIGHT
+    DEFPUSHBUTTON   "OK",IDOK,39,119,50,14
+    PUSHBUTTON      "ｷｬﾝｾﾙ",IDCANCEL,92,119,50,14
+    LTEXT           "指定しないと、演奏を停止します。",IDC_STATIC,9,39,102,9
+    LTEXT           "演奏するMIDIファイル:",IDC_STATIC,7,9,70,9
+    LTEXT           "フェード効果の持続ミリ秒:",IDC_STATIC,6,67,79,9
+    LTEXT           "0を指定すると、フェード効果を使いません。",IDC_STATIC,9,
+                    95,126,11
+    PUSHBUTTON      "参照",IDC_BUTTON,100,21,38,14,WS_DISABLED
+END
+
+IDD_PCM DIALOG DISCARDABLE  0, 0, 142, 69
+STYLE DS_LOCALEDIT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "PCM 演奏"
+FONT 9, "ＭＳ Ｐゴシック"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,29,48,50,14
+    PUSHBUTTON      "ｷｬﾝｾﾙ",IDCANCEL,85,48,50,14
+    LTEXT           "WAVEファイル名:",IDC_STATIC,7,7,53,8
+    EDITTEXT        IDC_EDIT,7,19,89,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "参照",IDC_BUTTON,103,19,32,14,WS_DISABLED
+END
+
+IDD_WAIT DIALOGEX 0, 0, 119, 43
+STYLE DS_LOCALEDIT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "ミリ秒ウェイト"
+FONT 9, "ＭＳ Ｐゴシック", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT,5,16,40,14,ES_NUMBER,WS_EX_RIGHT
+    DEFPUSHBUTTON   "OK",IDOK,64,5,50,14
+    PUSHBUTTON      "ｷｬﾝｾﾙ",IDCANCEL,64,24,50,14
+    LTEXT           "ミリ秒:",IDC_STATIC,5,5,21,8
+END
+
+IDD_TITLE DIALOG DISCARDABLE  0, 0, 213, 81
+STYLE DS_LOCALEDIT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "タイトル"
+FONT 9, "ＭＳ Ｐゴシック"
+BEGIN
+    EDITTEXT        IDC_EDIT,7,17,199,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,99,60,50,14
+    PUSHBUTTON      "ｷｬﾝｾﾙ",IDCANCEL,156,60,50,14
+    LTEXT           "タイトル:",IDC_STATIC,7,7,35,8
+    LTEXT           "ウィンドウのタイトルや、セーブデータのタイトルに反映されます。",
+                    IDC_STATIC,7,40,199,17
+END
+
+IDD_EVENTEDIT DIALOG DISCARDABLE  0, 0, 325, 329
+STYLE DS_LOCALEDIT | DS_MODALFRAME | DS_CENTER | WS_MINIMIZEBOX | WS_VISIBLE | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "イベントエディタ"
+FONT 9, "ＭＳ Ｐゴシック"
+BEGIN
+    COMBOBOX        IDC_CBEVENTNAME,41,14,87,195,CBS_DROPDOWNLIST | 
+                    CBS_NOINTEGRALHEIGHT | CBS_DISABLENOSCROLL | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "挿入(&I)",IDC_BTNINSERTEVENT,6,14,30,14
+    LISTBOX         IDC_LBEVENT,2,37,320,271,NOT LBS_NOTIFY | 
+                    LBS_USETABSTOPS | LBS_NOINTEGRALHEIGHT | 
+                    LBS_DISABLENOSCROLL | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "変更",IDC_BTNEDIT,140,14,32,14
+    PUSHBUTTON      "コピー",IDC_BTNCOPY,178,14,29,14
+    PUSHBUTTON      "カット",IDC_BTNCUT,213,14,29,14
+    PUSHBUTTON      "貼り付け",IDC_BTNPASTE,248,14,34,14
+    PUSHBUTTON      "削除",IDC_BTNDELETE,289,14,29,14
+    PUSHBUTTON      "保存(&S)",IDC_BTNSAVE,271,313,51,14
+    GROUPBOX        "挿入",-1,2,2,129,31
+    GROUPBOX        "編集",-1,135,2,187,31
+    PUSHBUTTON      "ファイルを開く",IDC_BTNOPEN,2,313,50,14
+    PUSHBUTTON      "ファイルから挿入",IDC_BTNFILEINSERT,58,313,56,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    "IDD_NARRATION", DIALOG
+    BEGIN
+        LEFTMARGIN, 1
+        RIGHTMARGIN, 110
+        TOPMARGIN, 1
+        BOTTOMMARGIN, 73
+        HORZGUIDE, 66
+    END
+
+    "IDD_SERIF", DIALOG
+    BEGIN
+        LEFTMARGIN, 1
+        RIGHTMARGIN, 110
+        TOPMARGIN, 1
+        BOTTOMMARGIN, 75
+        HORZGUIDE, 68
+    END
+
+    "IDD_CHARACTER", DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        RIGHTMARGIN, 182
+        VERTGUIDE, 10
+        VERTGUIDE, 94
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 184
+        HORZGUIDE, 31
+    END
+
+    "IDD_BACKGROUND", DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        RIGHTMARGIN, 181
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 69
+    END
+
+    "IDD_SELECT", DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 268
+        VERTGUIDE, 42
+        VERTGUIDE, 183
+        VERTGUIDE, 193
+        VERTGUIDE, 197
+        VERTGUIDE, 263
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 144
+        HORZGUIDE, 23
+        HORZGUIDE, 36
+        HORZGUIDE, 50
+        HORZGUIDE, 63
+        HORZGUIDE, 78
+        HORZGUIDE, 91
+        HORZGUIDE, 99
+    END
+
+    "IDD_LABEL", DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 112
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 56
+    END
+
+    "IDD_FLAG", DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 132
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 62
+    END
+
+    "IDD_CDDA", DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 160
+        VERTGUIDE, 29
+        VERTGUIDE, 35
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 100
+    END
+
+    "IDD_JUMP", DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 144
+        VERTGUIDE, 13
+        VERTGUIDE, 94
+        VERTGUIDE, 145
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 256
+    END
+
+    "IDD_COMMENT", DIALOG
+    BEGIN
+        LEFTMARGIN, 2
+        RIGHTMARGIN, 196
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 138
+    END
+
+    "IDD_MIDI", DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        RIGHTMARGIN, 142
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 133
+        HORZGUIDE, 4
+    END
+
+    "IDD_PCM", DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 135
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 62
+    END
+
+    "IDD_WAIT", DIALOG
+    BEGIN
+        LEFTMARGIN, 5
+        RIGHTMARGIN, 114
+        TOPMARGIN, 5
+        BOTTOMMARGIN, 38
+    END
+
+    "IDD_TITLE", DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 206
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 74
+    END
+
+    "IDD_EVENTEDIT", DIALOG
+    BEGIN
+        LEFTMARGIN, 2
+        RIGHTMARGIN, 322
+        TOPMARGIN, 2
+        BOTTOMMARGIN, 327
+        HORZGUIDE, 6
+        HORZGUIDE, 33
+        HORZGUIDE, 41
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_ACCELERATOR ACCELERATORS DISCARDABLE 
+BEGIN
+    "C",            IDC_BTNCLOSE,           VIRTKEY, ALT, NOINVERT
+    "I",            IDC_BTNINSERTEVENT,     VIRTKEY, ALT, NOINVERT
+    "S",            IDC_BTNSAVE,            VIRTKEY, ALT, NOINVERT
+    "V",            IDC_BTNPASTE,           VIRTKEY, CONTROL, NOINVERT
+    VK_CANCEL,      IDC_BTNCOPY,            VIRTKEY, NOINVERT
+    VK_DELETE,      IDC_BTNDELETE,          VIRTKEY, NOINVERT
+    VK_RETURN,      IDC_BTNEDIT,            VIRTKEY, NOINVERT
+    "X",            IDC_BTNCUT,             VIRTKEY, CONTROL, NOINVERT
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041104b0"
+        BEGIN
+            VALUE "Comments", "readme_suika.htmlをお読みください\0"
+            VALUE "CompanyName", "プロジェクト山田（仮）\0"
+            VALUE "FileDescription", "Suika イベントファイルエディタ\0"
+            VALUE "FileVersion", "Version 1.00.0  2002年1月12日\0"
+            VALUE "InternalName", "\0"
+            VALUE "LegalCopyright", "Copyright (C) 2001 ,2002, Studio K24J / Project Yamada.\0"
+            VALUE "OriginalFilename", "イベントエディタ.exe\0"
+            VALUE "ProductName", "アドベンチャーゲーム開発＆実行環境「Suika」\0"
+            VALUE "ProductVersion", "1.0\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x411, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON                ICON    DISCARDABLE     "voyage.ico"
+#endif    // 日本語 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
